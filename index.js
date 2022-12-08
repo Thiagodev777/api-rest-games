@@ -5,7 +5,7 @@ const cors = require('cors')
 const port = 8089;
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-app.use(express.cors());
+app.use(cors());
 
 const Helpers = require('./Helpers');
 const helpers = new Helpers();
